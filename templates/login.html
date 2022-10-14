@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Login</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  	<style>
+		img{width: 80%;}
+		.row{display: flex;}
+		.col-5{margin: 7% 0;text-align: center;padding: 0 13% 0 0;}
+		input{display: block;margin-bottom: 30px;border: 1px solid #99a5f3;width: 100%;height: 37px;
+			border-radius: 2em;padding-left: 15px;color: #392b75;outline: none;}
+		button{border: 1px solid #392c73;width: 20%;border-radius: 1em;height: 30px;background-color: #e1e9ff;
+			margin-bottom: 5%;}
+		h4{margin-bottom: 10%;color: #5643d6;}
+		form{border: 1px solid #99a5f3;padding: 15% 5%;border-radius: 5%;}
+		a{text-decoration: none;display: block;}
+		h3{text-align: center;margin-top: 10px;}
+  	</style>
+<head>
+<body>
+	<div class="mainForm">
+		<h3>Pocket Certificate</h3>
+		<div class="row">
+			<div class="col-7">
+				<div class="imgfile">
+					<img src="static/img/security.jpg">
+				</div>
+			</div>
+			<div class="col-5">
+				<form action="/log" method="post">
+					<h4>LOGIN</h4>
+					<input type="text" name="username" placeholder="Username" required>
+					<input type="password" name="password" placeholder="Password" required>
+					<button type="submit">Login</button>
+					<a href="/register">new user?</a>
+					<p>{{msg}}</p>
+				</form>
+			</div>
+		</div>
+	</div>
+<body>
